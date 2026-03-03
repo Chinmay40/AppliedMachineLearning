@@ -1,0 +1,40 @@
+============================= test session starts =============================
+platform win32 -- Python 3.13.12, pytest-9.0.2, pluggy-1.6.0
+rootdir: C:\Users\user\aml_a3
+plugins: anyio-4.12.1, cov-7.0.0
+collected 2 items
+
+test.py ..                                                               [100%]
+
+============================== warnings summary ===============================
+test.py::test_score
+test.py::test_flask
+  C:\Users\user\aml_a3\.venv\Lib\site-packages\sklearn\base.py:463: InconsistentVersionWarning: Trying to unpickle estimator CountVectorizer from version 1.6.1 when using version 1.8.0. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+  https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+    warnings.warn(
+
+test.py::test_score
+test.py::test_flask
+  C:\Users\user\aml_a3\.venv\Lib\site-packages\sklearn\base.py:463: InconsistentVersionWarning: Trying to unpickle estimator LinearSVC from version 1.6.1 when using version 1.8.0. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+  https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+    warnings.warn(
+
+test.py::test_score
+test.py::test_flask
+  C:\Users\user\aml_a3\.venv\Lib\site-packages\sklearn\base.py:463: InconsistentVersionWarning: Trying to unpickle estimator Pipeline from version 1.6.1 when using version 1.8.0. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+  https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+    warnings.warn(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=============================== tests coverage ================================
+______________ coverage: platform win32, python 3.13.12-final-0 _______________
+
+Name               Stmts   Miss  Cover   Missing
+------------------------------------------------
+app.py                15      1    93%   52
+preprocessing.py      17      1    94%   29
+score.py              10      1    90%   19
+test.py               44      0   100%
+------------------------------------------------
+TOTAL                 86      3    97%
+======================= 2 passed, 6 warnings in 12.71s ========================
